@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             dataGridView1 = new DataGridView();
-            MaKH = new DataGridViewTextBoxColumn();
-            tenKH = new DataGridViewTextBoxColumn();
-            sdt = new DataGridViewTextBoxColumn();
-            diemThanhVien = new DataGridViewTextBoxColumn();
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
             guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            MaKH = new DataGridViewTextBoxColumn();
+            tenKH = new DataGridViewTextBoxColumn();
+            sdt = new DataGridViewTextBoxColumn();
+            diemThanhVien = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -51,30 +51,6 @@
             dataGridView1.RowTemplate.Height = 33;
             dataGridView1.Size = new Size(1276, 460);
             dataGridView1.TabIndex = 0;
-            // 
-            // MaKH
-            // 
-            MaKH.HeaderText = "Mã Khách Hàng";
-            MaKH.MinimumWidth = 8;
-            MaKH.Name = "MaKH";
-            // 
-            // tenKH
-            // 
-            tenKH.HeaderText = "Họ Tên Khách Hàng";
-            tenKH.MinimumWidth = 8;
-            tenKH.Name = "tenKH";
-            // 
-            // sdt
-            // 
-            sdt.HeaderText = "Số Điện Thoại";
-            sdt.MinimumWidth = 8;
-            sdt.Name = "sdt";
-            // 
-            // diemThanhVien
-            // 
-            diemThanhVien.HeaderText = "Điểm Thành Viên";
-            diemThanhVien.MinimumWidth = 8;
-            diemThanhVien.Name = "diemThanhVien";
             // 
             // button1
             // 
@@ -113,6 +89,34 @@
             guna2HtmlLabel1.TabIndex = 4;
             guna2HtmlLabel1.Text = "Quản lý khách hàng";
             // 
+            // MaKH
+            // 
+            MaKH.DataPropertyName = "MaKH";
+            MaKH.HeaderText = "Mã Khách Hàng";
+            MaKH.MinimumWidth = 8;
+            MaKH.Name = "MaKH";
+            // 
+            // tenKH
+            // 
+            tenKH.DataPropertyName = "HoTenKH";
+            tenKH.HeaderText = "Họ Tên Khách Hàng";
+            tenKH.MinimumWidth = 8;
+            tenKH.Name = "tenKH";
+            // 
+            // sdt
+            // 
+            sdt.DataPropertyName = "SoDienThoai";
+            sdt.HeaderText = "Số Điện Thoại";
+            sdt.MinimumWidth = 8;
+            sdt.Name = "sdt";
+            // 
+            // diemThanhVien
+            // 
+            diemThanhVien.DataPropertyName = "DiemThanhVien";
+            diemThanhVien.HeaderText = "Điểm Thành Viên";
+            diemThanhVien.MinimumWidth = 8;
+            diemThanhVien.Name = "diemThanhVien";
+            // 
             // Admin_QLKH
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -133,13 +137,13 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private DataGridViewTextBoxColumn MaKH;
-        private DataGridViewTextBoxColumn tenKH;
-        private DataGridViewTextBoxColumn sdt;
-        private DataGridViewTextBoxColumn diemThanhVien;
         private Button button1;
         private Button button2;
         private Button button3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private DataGridViewTextBoxColumn MaKH;
+        private DataGridViewTextBoxColumn tenKH;
+        private DataGridViewTextBoxColumn sdt;
+        private DataGridViewTextBoxColumn diemThanhVien;
     }
 }
